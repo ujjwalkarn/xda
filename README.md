@@ -8,6 +8,8 @@ This package contains several functions to perform initial analysis on any dataf
 - `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides summary statistics for all numeric columns
 - `removeSpecial()` replaces all special characters from the dataframe `r mydata` 
 
+More functions to be added soon.
+
 To install the `xda` package, `devtools` package needs to be installed first. To install `devtools`, please follow instructions [here](https://github.com/hadley/devtools).
 
 Then, use the following commands to install `xda`:
