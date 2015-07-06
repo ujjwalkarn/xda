@@ -6,7 +6,7 @@ This package contains several functions to perform initial analysis on any dataf
 
 - `numSummary(mydata)` function automatically detects all numeric columns in the dataframe `mydata` and provides summary statistics for all numeric columns
 - `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides summary statistics for all numeric columns
-- `removeSpecial()` replaces all special characters in the dataframe `mydata` with `NA` 
+- `removeSpecial(mydata)` replaces all special characters in the dataframe `mydata` with `NA` 
 
 More functions to be added soon.
 
