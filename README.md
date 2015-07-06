@@ -4,8 +4,8 @@ R package for exploratory data analysis
 
 This package contains several functions to perform initial analysis on any dataframe. 
 
-- `numSummary(mydata)` function automatically detects all numeric columns in the dataframe `mydata` and provides summary statistics for all numeric columns
-- `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides summary statistics for all numeric columns
+- `numSummary(mydata)` function automatically detects all numeric columns in the dataframe `mydata` and provides their summary statistics 
+- `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides their summary statistics 
 - `removeSpecial(mydata)` replaces all special characters in the dataframe `mydata` with `NA` 
 
 More functions to be added soon.
@@ -19,7 +19,7 @@ library(devtools)
 install_github("ujwlkarn/xda")
 ```
 
-Test whether the `xda` package was successfully installed:
+To test whether the `xda` package was successfully, run these commands:
 ```
 library(xda)
 numSummary(iris)
