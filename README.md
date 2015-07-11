@@ -10,6 +10,8 @@ This package contains several functions to perform initial analysis on any dataf
 
 More functions to be added soon.
 
+Installation
+------------
 To install the `xda` package, `devtools` package needs to be installed first. To install `devtools`, please follow instructions [here](https://github.com/hadley/devtools).
 
 Then, use the following commands to install `xda`:
@@ -19,9 +21,13 @@ library(devtools)
 install_github("ujwlkarn/xda")
 ```
 
-To test whether the `xda` package was successfully, run these commands:
+Usage
+-----
 ```
 library(xda)
 numSummary(iris)
 charSummary(iris)
 ```
+Please refer to the documentation of each function to understand hoe to use it. 
+For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
+
