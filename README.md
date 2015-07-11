@@ -16,14 +16,14 @@ To install the `xda` package, `devtools` package needs to be installed first. To
 
 Then, use the following commands to install `xda`:
 
-```
+```s
 library(devtools)
 install_github("ujwlkarn/xda")
 ```
 
 Usage
 -----
-```
+```s
 library(xda)
 
 #to view a comprehensive summary for all numeric columns in the iris dataset
