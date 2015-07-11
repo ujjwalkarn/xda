@@ -25,7 +25,11 @@ Usage
 -----
 ```
 library(xda)
+
+#to view a comprehensive summary for all numeric columns in the iris dataset
 numSummary(iris)
+
+#to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
 ```
 Please refer to the documentation of each function to understand hoe to use it. 
