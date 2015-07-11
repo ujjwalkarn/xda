@@ -32,6 +32,6 @@ numSummary(iris)
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
 ```
-Please refer to the documentation of each function to understand hoe to use it. 
+Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
 
