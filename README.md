@@ -6,8 +6,8 @@ This package contains several functions to perform initial analysis on any dataf
 
 - `numSummary(mydata)` function automatically detects all numeric columns in the dataframe `mydata` and provides their summary statistics 
 - `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides their summary statistics 
-- `removeSpecial(mydata)` replaces all special characters in the dataframe `mydata` with `NA` 
 - `Plot(mydata, dep.var)` plots all independent variables in the dataframe `mydata` against the dependant variable specified by the `dep.var` parameter 
+- `removeSpecial(mydata)` replaces all special characters in the dataframe `mydata` with `NA` 
 
 More functions to be added soon.
 
