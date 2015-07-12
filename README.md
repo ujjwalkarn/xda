@@ -7,6 +7,7 @@ This package contains several functions to perform initial analysis on any dataf
 - `numSummary(mydata)` function automatically detects all numeric columns in the dataframe `mydata` and provides their summary statistics 
 - `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides their summary statistics 
 - `removeSpecial(mydata)` replaces all special characters in the dataframe `mydata` with `NA` 
+- `Plot(mydata, dep.var)` plots all independent variables in the dataframe `mydata` against the dependant variable specified by the `dep.var` parameter 
 
 More functions to be added soon.
 
@@ -31,6 +32,9 @@ numSummary(iris)
 
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
+
+# to plot all other variables against 'Species' in the iris dataset
+Plot(iris,'Species')
 ```
 Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
