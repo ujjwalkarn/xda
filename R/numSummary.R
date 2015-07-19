@@ -1,5 +1,5 @@
 #'Automatically detects numeric variables and gives a comprehensive summary 
-#'@param df- name of your data frame
+#'@param df name of your data frame
 #'@return Returns the summary data frame
 #'@examples
 #'data(iris)

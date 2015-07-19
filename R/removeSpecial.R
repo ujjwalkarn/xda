@@ -1,6 +1,6 @@
 #'Replaces special characters in your data frame to NA
-#'@param df- name of your data frame
-#'@param vec- vector containing the special characters you want to replace with NA
+#'@param df name of your data frame
+#'@param vec vector containing the special characters you want to replace with NA
 #'@return Returns the modified data frame
 #'@examples
 #'data(iris)
