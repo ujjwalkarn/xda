@@ -7,7 +7,7 @@
 numSummary(df)
 }
 \arguments{
-\item{df-}{name of your data frame}
+\item{df}{name of your data frame}
 }
 \value{
 Returns the summary data frame

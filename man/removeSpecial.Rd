@@ -7,9 +7,9 @@
 removeSpecial(df, vec)
 }
 \arguments{
-\item{df-}{name of your data frame}
+\item{df}{name of your data frame}
 
-\item{vec-}{vector containing the special characters you want to replace with NA}
+\item{vec}{vector containing the special characters you want to replace with NA}
 }
 \value{
 Returns the modified data frame
