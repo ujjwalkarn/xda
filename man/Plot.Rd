@@ -4,20 +4,22 @@
 \alias{Plot}
 \title{Plots all independent variables in the dataframe against the specified dependant variable }
 \usage{
-  Plot(df, dep.var)
+  Plot(df, dep.var, range)
 }
 \arguments{
-  \item{df-}{name of your data frame}
-  \item{dep.var-}{name of the dependant variable}
-  \item{range-}{specify which variables to plot using numeric range, default 'all'}
+  \item{df}{name of your data frame}
+  \item{dep.var}{name of the dependant variable}
+  \item{range}{specify which variables to plot using numeric range, default 'all'}
 }
 \value{
   Returns multiple plots
 }
 \description{
-  Plots all independent variables in the dataframe df against the dependant variable specified by the dep.var parameter
+  Plots all independent variables in the dataframe "df" against the dependant variable specified by the "dep.var" parameter.
+  The "range" parameter can be used to specify which variables to plot using numeric range (default is 'all' which plots all variables against the dependant variable)  
 }
 \examples{
-  data(iris)
   Plot(iris,'Species')
+  Plot(mtcars,'mpg')
+  Plot(mtcars,'mpg',1:7)
 }

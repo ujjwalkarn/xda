@@ -2,14 +2,13 @@
 % Please edit documentation in R/removeSpecial.R
 \name{removeSpecial}
 \alias{removeSpecial}
-\title{Replaces special characters in your data frame to NA}
+\title{Replaces special characters in the data frame with NA}
 \usage{
 removeSpecial(df, vec)
 }
 \arguments{
-\item{df-}{name of your data frame}
-
-\item{vec-}{vector containing the special characters you want to replace with NA}
+\item{df}{name of your data frame}
+\item{vec}{vector containing the special characters you want to replace with NA}
 }
 \value{
 Returns the modified data frame

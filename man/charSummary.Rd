@@ -7,13 +7,13 @@
 charSummary(df)
 }
 \arguments{
-\item{df-}{name of your data frame}
+\item{df}{name of the data frame}
 }
 \value{
 Returns the summary data frame
 }
 \description{
-Automatically detects character/factor variables and gives a comprehensive summary
+Automatically detects character/factor variables from the dataframe and gives a comprehensive summary
 }
 \examples{
 data(iris)
