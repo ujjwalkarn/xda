@@ -20,7 +20,7 @@ Then, use the following commands to install `xda`:
 
 ```s
 library(devtools)
-install_github("ujwlkarn/xda")
+install_github("ujjwalkarn/xda")
 ```
 
 Usage
