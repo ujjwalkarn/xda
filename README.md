@@ -1,8 +1,9 @@
 # xda
 R package for exploratory data analysis
 ---------------------------------------
+This package contains several tools to perform exploratory analysis on any input dataset. It includes custom functions for plotting the data as well as performing different kinds of analyses such as univariate, bivariate and multivariate investigation which is the first step of any predictive modeling pipeline. The package is constantly under development and more functionalities will be added soon.
 
-This package contains several functions to perform initial analysis on any dataframe. 
+The functions currently included in the package are mentioned below:
 
 - `numSummary(mydata)` function automatically detects all numeric columns in the dataframe `mydata` and provides their summary statistics 
 - `charSummary(mydata)` function automatically detects all character columns in the dataframe `mydata` and provides their summary statistics 
