@@ -1,7 +1,9 @@
 # xda
 R package for exploratory data analysis
 ---------------------------------------
-This package contains several tools to perform exploratory analysis on any input dataset. It includes custom functions for plotting the data as well as performing different kinds of analyses such as univariate, bivariate and multivariate investigation which is the first step of any predictive modeling pipeline. The package is constantly under development and more functionalities will be added soon.
+This package contains several tools to perform exploratory analysis on any input dataset. It includes custom functions for plotting the data as well as performing different kinds of analyses such as univariate, bivariate and multivariate investigation which is the first step of any predictive modeling pipeline.
+
+The package is constantly under development and more functionalities will be added soon. Pull requests to add more functions are welcome!
 
 The functions currently included in the package are mentioned below:
 
@@ -26,6 +28,8 @@ install_github("ujjwalkarn/xda")
 
 Usage
 -----
+For all examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) has been used. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor).
+
 ```s
 library(xda)
 
@@ -45,6 +49,7 @@ charSummary(iris)
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((n/miss)*100)
 #unique = number of unique levels of that variable
+#note that there is only one character column in the iris dataset
 ```
 ![ncharSummary(iris) Output](/images/charSummary.png?raw=true)
 
@@ -52,6 +57,10 @@ charSummary(iris)
 ```s
 #to perform bivariate analysis between 'Species` and `Sepal.Length` in the iris dataset
 bivariate(iris,'Species','Sepal.Length')
+#bin_Sepal.Length= 'Sepal.Length' variable has been binned into 4 equal intervals (its original range is between 4.3 to 7.9)
+#for each interval of 'Sepal.Length', the number of samples from each category of 'Species' is shown 
+#i.e. 39 of the 50 samples of Setosa have Sepal.Length is in the range (4.3,5.2], and so on. 
+#the number of intervals (4 in this case) can be customized (see documentation)
 ```
 ![bivariate(iris,'Species','Sepal.Length') Output](/images/bivariate.png?raw=true)
 
