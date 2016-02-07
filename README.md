@@ -37,8 +37,8 @@ library(xda)
 numSummary(iris)
 #n= total number of rows for that variable
 #miss = number of rows with missing value
-#miss% = percentage of total rows with missing values ((n/miss)*100)
-#5% = 5th percentile value of that variable (the 5th percentile is the value below which 5 percent of the observations may be found)
+#miss% = percentage of total rows with missing values ((miss/n)*100)
+#5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
 ```
 ![numSummary(iris) Output](/images/numSummary.png?raw=true)
 
@@ -49,15 +49,15 @@ charSummary(iris)
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((n/miss)*100)
 #unique = number of unique levels of that variable
-#note that there is only one character column in the iris dataset
+#note that there is only one character column (Species) in the iris dataset
 ```
 ![ncharSummary(iris) Output](/images/charSummary.png?raw=true)
 
 
 ```s
-#to perform bivariate analysis between 'Species` and `Sepal.Length` in the iris dataset
+#to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
 bivariate(iris,'Species','Sepal.Length')
-#bin_Sepal.Length= 'Sepal.Length' variable has been binned into 4 equal intervals (its original range is between 4.3 to 7.9)
+#bin_Sepal.Length= 'Sepal.Length' variable has been binned into 4 equal intervals (original range is [4.3,7.9])
 #for each interval of 'Sepal.Length', the number of samples from each category of 'Species' is shown 
 #i.e. 39 of the 50 samples of Setosa have Sepal.Length is in the range (4.3,5.2], and so on. 
 #the number of intervals (4 in this case) can be customized (see documentation)
