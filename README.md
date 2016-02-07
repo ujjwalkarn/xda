@@ -31,6 +31,8 @@ library(xda)
 
 #to view a comprehensive summary for all numeric columns in the iris dataset
 numSummary(iris)
+```
+![numSummary Output](https://drive.google.com/file/d/0By_wg-rXnp_6aGNkdjc4c2JfU3c/view?usp=sharing)
 
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
