@@ -62,19 +62,25 @@
 <div class="highlight highlight-source-asm-x86"><pre>library(devtools)
 install_github(<span class="pl-s"><span class="pl-pds">"</span>ujjwalkarn/xda<span class="pl-pds">"</span></span>)</pre></div>
 
-<h3>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
 <div class="highlight highlight-source-asm-x86"><pre>library(xda)
 
 <span class="pl-c">#to view a comprehensive summary for all numeric columns in the iris dataset</span>
-numSummary(iris)
+numSummary(iris)</pre></div>
 
-<span class="pl-c">#to view a comprehensive summary for all character columns in the iris dataset</span>
-charSummary(iris)
+<p><img src="/images/numSummary.png?raw=true" alt="numSummary(iris) Output"></p>
 
-<span class="pl-c"># to plot all other variables against the 'Petal.Length' variable in the iris dataset</span>
+<div class="highlight highlight-source-asm-x86"><pre><span class="pl-c">#to view a comprehensive summary for all character columns in the iris dataset</span>
+charSummary(iris)</pre></div>
+
+<p><img src="/images/charSummary.png?raw=true" alt="ncharSummary(iris) Output"></p>
+
+<div class="highlight highlight-source-asm-x86"><pre><span class="pl-c"># to plot all other variables against the 'Petal.Length' variable in the iris dataset</span>
 Plot(iris,<span class="pl-s"><span class="pl-pds">'</span>Petal.Length<span class="pl-pds">'</span></span>)</pre></div>
+
+<p><img src="/images/Plot.png?raw=true" alt="Plot(iris,'Petal.Length') Output"></p>
 
 <p>Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the <code>numSummary()</code> function, use <code>?numSummary</code>.</p>
