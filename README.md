@@ -35,8 +35,8 @@ numSummary(iris)
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
 
-# to plot all other variables against the 'Species' variable in the iris dataset
-Plot(iris,'Species')
+# to plot all other variables against the 'mpg' variable in the mtcars dataset
+Plot(mtcars,'mpg')
 ```
 Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
