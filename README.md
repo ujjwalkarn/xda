@@ -33,14 +33,18 @@ library(xda)
 numSummary(iris)
 #n= total number of rows for that variable
 #miss = number of rows with missing value
-#miss% = percentage of total rows with missing values ((n*100)/miss)
-#%5 = 5th percentile value, etc.
+#miss% = percentage of total rows with missing values ((n/miss)*100)
+#5% = 5th percentile value of that variable (the 5th percentile is the value below which 5 percent of the observations may be found)
 ```
 ![numSummary(iris) Output](/images/numSummary.png?raw=true)
 
 ```s
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
+#n= total number of rows for that variable
+#miss = number of rows with missing value
+#miss% = percentage of total rows with missing values ((n/miss)*100)
+#unique = number of unique levels of that variable
 ```
 ![ncharSummary(iris) Output](/images/charSummary.png?raw=true)
 
