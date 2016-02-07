@@ -32,7 +32,7 @@
 
         <section id="main_content">
           <h3>
-<a id="welcome-to-xda" class="anchor" href="#welcome-to-xda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to xda</h3>
+<a id="welcome-to-xda" class="anchor" href="#welcome-to-xda" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to xda</h3>
 
 <p>This package contains several functions to perform initial analysis on any dataframe. </p>
 
@@ -53,19 +53,19 @@
 <p>More functions to be added soon.</p>
 
 <h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
 <p>To install the <code>xda</code> package, <code>devtools</code> package needs to be installed first. To install <code>devtools</code>, please follow instructions <a href="https://github.com/hadley/devtools">here</a>.</p>
 
 <p>Then, use the following commands to install <code>xda</code>:</p>
 
-<div class="highlight highlight-s"><pre>library(devtools)
+<div class="highlight highlight-source-asm-x86"><pre>library(devtools)
 install_github(<span class="pl-s"><span class="pl-pds">"</span>ujjwalkarn/xda<span class="pl-pds">"</span></span>)</pre></div>
 
 <h3>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
 
-<div class="highlight highlight-s"><pre>library(xda)
+<div class="highlight highlight-source-asm-x86"><pre>library(xda)
 
 <span class="pl-c">#to view a comprehensive summary for all numeric columns in the iris dataset</span>
 numSummary(iris)
@@ -73,8 +73,8 @@ numSummary(iris)
 <span class="pl-c">#to view a comprehensive summary for all character columns in the iris dataset</span>
 charSummary(iris)
 
-<span class="pl-c"># to plot all other variables against the 'Species' variable in the iris dataset</span>
-Plot(iris,<span class="pl-s"><span class="pl-pds">'</span>Species<span class="pl-pds">'</span></span>)</pre></div>
+<span class="pl-c"># to plot all other variables against the 'mpg' variable in the mtcars dataset</span>
+Plot(mtcars,<span class="pl-s"><span class="pl-pds">'</span>mpg<span class="pl-pds">'</span></span>)</pre></div>
 
 <p>Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the <code>numSummary()</code> function, use <code>?numSummary</code>.</p>
