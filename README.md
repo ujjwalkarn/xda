@@ -44,7 +44,8 @@ charSummary(iris)
 # to plot all other variables against the 'Petal.Length' variable in the iris dataset
 Plot(iris,'Petal.Length')
 ```
-![Plot(iris,'Petal.Length') Output](/images/Plot.png?raw=true)
+![Plot(iris,'Petal.Length') Output](/images/Plot1.png?raw=true)
+![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
 
 Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
