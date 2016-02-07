@@ -31,6 +31,10 @@ library(xda)
 
 #to view a comprehensive summary for all numeric columns in the iris dataset
 numSummary(iris)
+#n= total number of rows for that variable
+#miss = number of rows with missing value
+#miss% = percentage of total rows with missing values ((n*100)/miss)
+#%5 = 5th percentile value, etc.
 ```
 ![numSummary(iris) Output](/images/numSummary.png?raw=true)
 
