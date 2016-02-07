@@ -1,7 +1,7 @@
 # xda
 R package for exploratory data analysis
 ---------------------------------------
-This package contains several tools to perform exploratory analysis on any input dataset. It includes custom functions for plotting the data as well as performing different kinds of analyses such as univariate, bivariate and multivariate investigation which is the first step of any predictive modeling pipeline.
+This package contains several tools to perform initial exploratory analysis on any input dataset. It includes custom functions for plotting the data as well as performing different kinds of analyses such as univariate, bivariate and multivariate investigation which is the first step of any predictive modeling pipeline. This package can be used to get a good sense of any dataset before jumping on to building predictive models.
 
 The package is constantly under development and more functionalities will be added soon. Pull requests to add more functions are welcome!
 
