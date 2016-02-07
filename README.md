@@ -47,6 +47,14 @@ Plot(iris,'Petal.Length')
 ![Plot(iris,'Petal.Length') Output](/images/Plot1.png?raw=true)
 ![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
 
+```s
+#to perform bivariate analysis between 'Species` and `Sepal.Length` in the iris dataset
+bivariate(iris,'Species','Sepal.Length')
+```
+![bivariate(iris,'Species','Sepal.Length') Output](/images/bivariate.png?raw=true)
+
+
+
 Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
 
