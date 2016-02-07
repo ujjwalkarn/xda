@@ -35,7 +35,7 @@ library(xda)
 
 #to view a comprehensive summary for all numeric columns in the iris dataset
 numSummary(iris)
-#n= total number of rows for that variable
+#n = total number of rows for that variable
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((miss/n)*100)
 #5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
@@ -45,7 +45,7 @@ numSummary(iris)
 ```s
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
-#n= total number of rows for that variable
+#n = total number of rows for that variable
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((n/miss)*100)
 #unique = number of unique levels of that variable
@@ -57,7 +57,7 @@ charSummary(iris)
 ```s
 #to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
 bivariate(iris,'Species','Sepal.Length')
-#bin_Sepal.Length= 'Sepal.Length' variable has been binned into 4 equal intervals (original range is [4.3,7.9])
+#bin_Sepal.Length = 'Sepal.Length' variable has been binned into 4 equal intervals (original range is [4.3,7.9])
 #for each interval of 'Sepal.Length', the number of samples from each category of 'Species' is shown 
 #i.e. 39 of the 50 samples of Setosa have Sepal.Length is in the range (4.3,5.2], and so on. 
 #the number of intervals (4 in this case) can be customized (see documentation)
