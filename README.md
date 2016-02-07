@@ -39,6 +39,7 @@ numSummary(iris)
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((miss/n)*100)
 #5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
+#the percentile values are helpful in detecting outliers
 ```
 ![numSummary(iris) Output](/images/numSummary.png?raw=true)
 
