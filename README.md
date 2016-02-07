@@ -31,13 +31,21 @@ library(xda)
 
 #to view a comprehensive summary for all numeric columns in the iris dataset
 numSummary(iris)
+```
+![numSummary(iris) Output](/images/numSummary.png?raw=true)
 
+```s
 #to view a comprehensive summary for all character columns in the iris dataset
 charSummary(iris)
+```
+![ncharSummary(iris) Output](/images/charSummary.png?raw=true)
 
+```s
 # to plot all other variables against the 'Petal.Length' variable in the iris dataset
 Plot(iris,'Petal.Length')
 ```
+![Plot(iris,'Petal.Length') Output](/images/Plot.png?raw=true)
+
 Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
 
