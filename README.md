@@ -33,8 +33,10 @@ For all examples below, the [popular iris dataset](https://en.wikipedia.org/wiki
 ```s
 library(xda)
 
-#to view a comprehensive summary for all numeric columns in the iris dataset
+# to view a comprehensive summary for all numeric columns in the iris dataset
+
 numSummary(iris)
+
 #n = total number of rows for that variable
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((miss/n)*100)
@@ -45,7 +47,9 @@ numSummary(iris)
 
 ```s
 #to view a comprehensive summary for all character columns in the iris dataset
+
 charSummary(iris)
+
 #n = total number of rows for that variable
 #miss = number of rows with missing value
 #miss% = percentage of total rows with missing values ((n/miss)*100)
@@ -57,7 +61,9 @@ charSummary(iris)
 
 ```s
 #to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
+
 bivariate(iris,'Species','Sepal.Length')
+
 #bin_Sepal.Length = 'Sepal.Length' variable has been binned into 4 equal intervals (original range is [4.3,7.9])
 #for each interval of 'Sepal.Length', the number of samples from each category of 'Species' is shown 
 #i.e. 39 of the 50 samples of Setosa have Sepal.Length is in the range (4.3,5.2], and so on. 
@@ -67,7 +73,9 @@ bivariate(iris,'Species','Sepal.Length')
 
 ```s
 # to plot all other variables against the 'Petal.Length' variable in the iris dataset
+
 Plot(iris,'Petal.Length')
+
 ```
 ![Plot(iris,'Petal.Length') Output](/images/Plot1.png?raw=true)
 ![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
