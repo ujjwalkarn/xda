@@ -33,46 +33,46 @@ For all examples below, the [popular iris dataset](https://en.wikipedia.org/wiki
 ```s
 library(xda)
 
-# to view a comprehensive summary for all numeric columns in the iris dataset
+## to view a comprehensive summary for all numeric columns in the iris dataset
 
 numSummary(iris)
 
-#n = total number of rows for that variable
-#miss = number of rows with missing value
-#miss% = percentage of total rows with missing values ((miss/n)*100)
-#5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
-#the percentile values are helpful in detecting outliers
+## n = total number of rows for that variable
+## miss = number of rows with missing value
+## miss% = percentage of total rows with missing values ((miss/n)*100)
+## 5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
+## the percentile values are helpful in detecting outliers
 ```
 ![numSummary(iris) Output](/images/numSummary.png?raw=true)
 
 ```s
-#to view a comprehensive summary for all character columns in the iris dataset
+## to view a comprehensive summary for all character columns in the iris dataset
 
 charSummary(iris)
 
-#n = total number of rows for that variable
-#miss = number of rows with missing value
-#miss% = percentage of total rows with missing values ((n/miss)*100)
-#unique = number of unique levels of that variable
-#note that there is only one character column (Species) in the iris dataset
+## n = total number of rows for that variable
+## miss = number of rows with missing value
+## miss% = percentage of total rows with missing values ((n/miss)*100)
+## unique = number of unique levels of that variable
+## note that there is only one character column (Species) in the iris dataset
 ```
 ![ncharSummary(iris) Output](/images/charSummary.png?raw=true)
 
 
 ```s
-#to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
+## to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
 
 bivariate(iris,'Species','Sepal.Length')
 
-#bin_Sepal.Length = 'Sepal.Length' variable has been binned into 4 equal intervals (original range is [4.3,7.9])
-#for each interval of 'Sepal.Length', the number of samples from each category of 'Species' is shown 
-#i.e. 39 of the 50 samples of Setosa have Sepal.Length is in the range (4.3,5.2], and so on. 
-#the number of intervals (4 in this case) can be customized (see documentation)
+## bin_Sepal.Length = 'Sepal.Length' variable has been binned into 4 equal intervals (original range is [4.3,7.9])
+## for each interval of 'Sepal.Length', the number of samples from each category of 'Species' is shown 
+## i.e. 39 of the 50 samples of Setosa have Sepal.Length is in the range (4.3,5.2], and so on. 
+## the number of intervals (4 in this case) can be customized (see documentation)
 ```
 ![bivariate(iris,'Species','Sepal.Length') Output](/images/bivariate.png?raw=true)
 
 ```s
-# to plot all other variables against the 'Petal.Length' variable in the iris dataset
+## to plot all other variables against the 'Petal.Length' variable in the iris dataset
 
 Plot(iris,'Petal.Length')
 
