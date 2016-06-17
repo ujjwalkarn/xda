@@ -76,6 +76,7 @@ bivariate(iris,'Species','Sepal.Length')
 
 Plot(iris,'Petal.Length')
 
+## some interesting patterns can be seen in the plots below and these insights can be used for predictive modeling
 ```
 ![Plot(iris,'Petal.Length') Output](/images/Plot1.png?raw=true)
 ![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
