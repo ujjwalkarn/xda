@@ -1,3 +1,14 @@
+#'Plots all variables of a data frame against the specified dependant variable  
+#'@param df name of the data frame
+#'@param dep.var name the dependant variable
+#'@param indep.var name the independant variable
+#'@param n.bins number of bins to create 
+#'@return returns bivariate analysis summary dataframe
+#'@examples
+#'data(iris)
+#'bivariate(iris,'Species','Petal.Width',n.bins=3)
+#'@export
+#'
 bivariate <- function(df,dep.var,indep.var,n.bins=4,na.rm=TRUE){
   
   c.dep.var   <- dep.var
