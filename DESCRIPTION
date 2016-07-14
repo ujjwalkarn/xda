@@ -1,5 +1,5 @@
 Package: xda
-Version: 0.1
+Version: 0.2
 Title: Functions to perform exploratory analysis with any dataframe
 Description: This package contains several functions to perform initial exploratory analysis with any dataframe
 Depends: R (>= 3.1.3)
