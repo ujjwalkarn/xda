@@ -50,8 +50,10 @@ numSummary(iris)
 ## 5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
 ## the percentile values are helpful in detecting outliers
 ```
-####Output
+#####Output
 ```s
+> numSummary(iris)
+
                 n mean    sd max min range nunique nzeros  iqr lowerbound upperbound noutlier kurtosis skewness mode miss miss%   1%   5% 25%  50% 75%  95%  99%
  Sepal.Length 150 5.84 0.828 7.9 4.3   3.6      35      0 1.30       3.15       8.35        0   -0.606    0.309  5.0    0     0 4.40 4.60 5.1 5.80 6.4 7.25 7.70
  Sepal.Width  150 3.06 0.436 4.4 2.0   2.4      23      0 0.50       2.05       4.05        4    0.139    0.313  3.0    0     0 2.20 2.34 2.8 3.00 3.3 3.80 4.15
@@ -74,8 +76,10 @@ charSummary(warpbreaks)
 ## for example, wool has 2 unique levels 'A' and 'B' each with count of 27 
 
 ```
-####Output
+#####Output
 ```s
+> charSummary(warpbreaks)
+
           n miss miss% unique top5levels:count
  wool    54    0     0      2       A:27, B:27
  tension 54    0     0      3 H:18, L:18, M:18
@@ -94,8 +98,9 @@ bivariate(iris,'Species','Sepal.Length')
 ## the number of intervals (4 in this case) can be customized (see documentation)
 
 ```
-####Output
+#####Output
 ```s
+> bivariate(iris,'Species','Sepal.Length')
 
    bin_Sepal.Length setosa versicolor virginica
  1        (4.3,5.2]     39          5         1
@@ -114,7 +119,10 @@ Plot(iris,'Petal.Length')
 
 ## some interesting patterns can be seen in the plots below and these insights can be used for predictive modeling
 ```
-####Output
+#####Output
+```s
+> Plot(iris,'Petal.Length')
+```
 ![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
 
 ---
