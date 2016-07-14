@@ -1,6 +1,5 @@
-# xda
-R package for exploratory data analysis
----------------------------------------
+# xda: R package for exploratory data analysis
+
 This package contains several tools to perform initial exploratory analysis on any input dataset. It includes custom functions for plotting the data as well as performing different kinds of analyses such as univariate, bivariate and multivariate investigation which is the first step of any predictive modeling pipeline. This package can be used to get a good sense of any dataset before jumping on to building predictive models.
 
 The package is constantly under development and more functionalities will be added soon. Pull requests to add more functions are welcome!
@@ -15,8 +14,8 @@ The functions currently included in the package are mentioned below:
 
 More functions to be added soon.
 
-Installation
-------------
+# Installation
+
 To install the `xda` package, `devtools` package needs to be installed first. To install `devtools`, please follow instructions [here](https://github.com/hadley/devtools).
 
 Then, use the following commands to install `xda`:
@@ -26,8 +25,8 @@ library(devtools)
 install_github("ujjwalkarn/xda")
 ```
 
-Usage
------
+# Usage
+
 For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) and the [warpbreaks dataset](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html) has been used.
 
 ```s
@@ -35,7 +34,7 @@ For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iri
 
 library(xda)
 ```
-###numSummary()
+##numSummary()
 ```s
 ## to view a comprehensive summary for all numeric columns in the iris dataset
 
@@ -63,7 +62,7 @@ numSummary(iris)
 
 ```
 
-###charSummary()
+##charSummary()
 ```s
 ## to view a comprehensive summary for all character columns in the warpbreaks dataset
 
@@ -87,7 +86,7 @@ charSummary(warpbreaks)
 
 ```
 
-###bivariate()
+##bivariate()
 ```s
 ## to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
 
@@ -109,10 +108,9 @@ bivariate(iris,'Species','Sepal.Length')
  3          (6.1,7]      0         16        27
  4          (7,7.9]      0          0        12
 
-
 ```
 
-###Plot()
+##Plot()
 ```s
 ## to plot all other variables against the 'Petal.Length' variable in the iris dataset
 
