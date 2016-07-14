@@ -28,7 +28,7 @@ install_github("ujjwalkarn/xda")
 
 Usage
 -----
-For all examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) has been used. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor).
+For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) has been used. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). The [warpbreaks dataset](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html) has been used as well.
 
 ```s
 library(xda)
@@ -44,6 +44,10 @@ numSummary(iris)
 ## Petal.Width  150 1.20 0.762 2.5 0.1   2.4      22      0 1.50      -1.95       4.05        0   -1.358   -0.101  0.2    0     0 0.10 0.20 0.3 1.30 1.8 2.30 2.50
 
 ## n = total number of rows for that variable
+## nunique = number of unique values
+## nzeroes = number of zeroes
+## iqr = interquartile range
+## noutlier = number of outliers
 ## miss = number of rows with missing value
 ## miss% = percentage of total rows with missing values ((miss/n)*100)
 ## 5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
@@ -51,18 +55,19 @@ numSummary(iris)
 ```
 
 ```s
-## to view a comprehensive summary for all character columns in the iris dataset
+## to view a comprehensive summary for all character columns in the warpbreaks dataset
 
-charSummary(iris)
+charSummary(warpbreaks)
 
-##           n miss miss% unique                       top5levels:count
-## Species 150    0     0      3 setosa:50, versicolor:50, virginica:50
+##          n miss miss% unique top5levels:count
+## wool    54    0     0      2       A:27, B:27
+## tension 54    0     0      3 H:18, L:18, M:18
 
 ## n = total number of rows for that variable
 ## miss = number of rows with missing value
 ## miss% = percentage of total rows with missing values ((n/miss)*100)
 ## unique = number of unique levels of that variable
-## note that there is only one character column (Species) in the iris dataset
+## top5levels:count = top 5 levels (unique values) in each column sorted by count
 
 ```
 
