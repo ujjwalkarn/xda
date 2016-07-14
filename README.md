@@ -62,7 +62,7 @@ numSummary(iris)
  Petal.Width  150 1.20 0.762 2.5 0.1   2.4      22      0 1.50      -1.95       4.05        0   -1.358   -0.101  0.2    0     0 0.10 0.20 0.3 1.30 1.8 2.30 2.50
 
 ```
----
+
 ###charSummary()
 ```s
 ## to view a comprehensive summary for all character columns in the warpbreaks dataset
@@ -86,7 +86,7 @@ charSummary(warpbreaks)
  tension 54    0     0      3 H:18, L:18, M:18
 
 ```
----
+
 ###bivariate()
 ```s
 ## to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
@@ -111,7 +111,7 @@ bivariate(iris,'Species','Sepal.Length')
 
 
 ```
----
+
 ###Plot()
 ```s
 ## to plot all other variables against the 'Petal.Length' variable in the iris dataset
