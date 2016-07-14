@@ -22,12 +22,12 @@ charSummary <- function(df){
     dfchar   <- subset(df, select=char)
     E        <- sapply(dfchar, function(x) as.character(x))
     EE       <- as.data.frame(E)
-    n        <- as.data.frame(sapply(EE, function(x) sum(!is.na(x)) ))
+    n        <- as.data.frame(sapply(EE, function(x) sum(!is.na(x))))
     n        <- data.frame(n)
     colnames(n) <- "n"
     
     #missing value computation
-    miss     <- sapply(EE, function(x) sum(is.na(x)) )
+    miss     <- sapply(EE, function(x) sum(is.na(x)))
     miss     <- as.data.frame(miss)
     g3       <- cbind(n, miss)
     perc     <- (miss/n)*100
@@ -41,9 +41,9 @@ charSummary <- function(df){
      topfivelevelcount <- paste0(names(topfive), ":", topfive)
     }
     
-    unique     <- sapply(EE,function(x) length(unique(x)))
-    unique_val <- sapply(EE,function(x) paste0(topfivelevel(x),collapse = ","))
-    m4         <- cbind.data.frame(m3,unique,"top5levels:count"= unique_val)
+    unique     <- sapply(EE, function(x) length(unique(x)))
+    unique_val <- sapply(EE, function(x) paste0(topfivelevel(x), collapse = ", "))
+    m4         <- cbind.data.frame(m3, unique, "top5levels:count" = unique_val)
     
     return(m4)
   }
