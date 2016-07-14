@@ -13,17 +13,25 @@ The functions currently included in the package are mentioned below:
 - `bivariate(mydata, dep.var, indep.var)` performs bivariate analysis between dependent variable `dep.var` and independent variable `indep.var` in the dataframe `mydata`
 
 More functions to be added soon.
+ 
+**Note:** All functions mentioned above expect `mydata` to be a data.frame - please convert your input dataset to a data.frame before using any function from this package.
 
 # Installation
 
-To install the `xda` package, `devtools` package needs to be installed first. To install `devtools`, please follow instructions [here](https://github.com/hadley/devtools).
+- The best way to install `xda` package is to install `devtools` package first. To install `devtools`, please follow instructions [here](https://github.com/hadley/devtools). Then, use the following commands to install `xda`:
 
-Then, use the following commands to install `xda`:
+  ```s
+  library(devtools)
+  install_github("ujjwalkarn/xda")
+  ```
 
-```s
-library(devtools)
-install_github("ujjwalkarn/xda")
-```
+- Alternatively, you may also use the `githubinstall` package for installing `xda`:
+
+  ```s
+  install.packages("githubinstall")
+  library(githubinstall)
+  githubinstall("xda")
+  ```
 
 # Usage
 
