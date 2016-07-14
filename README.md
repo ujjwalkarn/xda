@@ -27,7 +27,7 @@ install_github("ujjwalkarn/xda")
 
 # Usage
 
-For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) and the [warpbreaks dataset](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html) has been used.
+For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) and the [warpbreaks dataset](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html) has been used. Please refer to the documentation of each function to understand how to use it. For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
 
 ```s
 ## load the package into the current session
@@ -124,8 +124,4 @@ Plot(iris,'Petal.Length')
 ```
 ![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
 
----
-
-Please refer to the documentation of each function to understand how to use it. 
-For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
 
