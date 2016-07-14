@@ -28,12 +28,13 @@ install_github("ujjwalkarn/xda")
 
 Usage
 -----
-For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) has been used. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). The [warpbreaks dataset](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html) has been used as well.
+For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) and the [warpbreaks dataset](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/warpbreaks.html) has been used.
 
 ```s
+## load the package into the current session
+
 library(xda)
 ```
----
 ###numSummary()
 ```s
 ## to view a comprehensive summary for all numeric columns in the iris dataset
