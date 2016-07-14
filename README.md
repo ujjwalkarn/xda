@@ -32,7 +32,10 @@ For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iri
 
 ```s
 library(xda)
-
+```
+---
+###numSummary()
+```s
 ## to view a comprehensive summary for all numeric columns in the iris dataset
 
 numSummary(iris)
@@ -47,15 +50,17 @@ numSummary(iris)
 ## 5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
 ## the percentile values are helpful in detecting outliers
 ```
+####Output
 ```s
-##                n mean    sd max min range nunique nzeros  iqr lowerbound upperbound noutlier kurtosis skewness mode miss miss%   1%   5% 25%  50% 75%  95%  99%
-## Sepal.Length 150 5.84 0.828 7.9 4.3   3.6      35      0 1.30       3.15       8.35        0   -0.606    0.309  5.0    0     0 4.40 4.60 5.1 5.80 6.4 7.25 7.70
-## Sepal.Width  150 3.06 0.436 4.4 2.0   2.4      23      0 0.50       2.05       4.05        4    0.139    0.313  3.0    0     0 2.20 2.34 2.8 3.00 3.3 3.80 4.15
-## Petal.Length 150 3.76 1.765 6.9 1.0   5.9      43      0 3.55      -3.72      10.42        0   -1.417   -0.269  1.4    0     0 1.15 1.30 1.6 4.35 5.1 6.10 6.70
-## Petal.Width  150 1.20 0.762 2.5 0.1   2.4      22      0 1.50      -1.95       4.05        0   -1.358   -0.101  0.2    0     0 0.10 0.20 0.3 1.30 1.8 2.30 2.50
+                n mean    sd max min range nunique nzeros  iqr lowerbound upperbound noutlier kurtosis skewness mode miss miss%   1%   5% 25%  50% 75%  95%  99%
+ Sepal.Length 150 5.84 0.828 7.9 4.3   3.6      35      0 1.30       3.15       8.35        0   -0.606    0.309  5.0    0     0 4.40 4.60 5.1 5.80 6.4 7.25 7.70
+ Sepal.Width  150 3.06 0.436 4.4 2.0   2.4      23      0 0.50       2.05       4.05        4    0.139    0.313  3.0    0     0 2.20 2.34 2.8 3.00 3.3 3.80 4.15
+ Petal.Length 150 3.76 1.765 6.9 1.0   5.9      43      0 3.55      -3.72      10.42        0   -1.417   -0.269  1.4    0     0 1.15 1.30 1.6 4.35 5.1 6.10 6.70
+ Petal.Width  150 1.20 0.762 2.5 0.1   2.4      22      0 1.50      -1.95       4.05        0   -1.358   -0.101  0.2    0     0 0.10 0.20 0.3 1.30 1.8 2.30 2.50
 
 ```
-
+---
+###charSummary()
 ```s
 ## to view a comprehensive summary for all character columns in the warpbreaks dataset
 
@@ -69,15 +74,15 @@ charSummary(warpbreaks)
 ## for example, wool has 2 unique levels 'A' and 'B' each with count of 27 
 
 ```
-
+####Output
 ```s
-##          n miss miss% unique top5levels:count
-## wool    54    0     0      2       A:27, B:27
-## tension 54    0     0      3 H:18, L:18, M:18
+          n miss miss% unique top5levels:count
+ wool    54    0     0      2       A:27, B:27
+ tension 54    0     0      3 H:18, L:18, M:18
 
 ```
-
-
+---
+###bivariate()
 ```s
 ## to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
 
@@ -89,19 +94,19 @@ bivariate(iris,'Species','Sepal.Length')
 ## the number of intervals (4 in this case) can be customized (see documentation)
 
 ```
-
+####Output
 ```s
 
-##   bin_Sepal.Length setosa versicolor virginica
-## 1        (4.3,5.2]     39          5         1
-## 2        (5.2,6.1]     11         29        10
-## 3          (6.1,7]      0         16        27
-## 4          (7,7.9]      0          0        12
+   bin_Sepal.Length setosa versicolor virginica
+ 1        (4.3,5.2]     39          5         1
+ 2        (5.2,6.1]     11         29        10
+ 3          (6.1,7]      0         16        27
+ 4          (7,7.9]      0          0        12
 
 
 ```
-
-
+---
+###Plot()
 ```s
 ## to plot all other variables against the 'Petal.Length' variable in the iris dataset
 
@@ -109,8 +114,10 @@ Plot(iris,'Petal.Length')
 
 ## some interesting patterns can be seen in the plots below and these insights can be used for predictive modeling
 ```
+####Output
 ![Plot(iris,'Petal.Length') Output](/images/Plot2.png?raw=true)
 
+---
 
 Please refer to the documentation of each function to understand how to use it. 
 For example, to see the documenation for the `numSummary()` function, use `?numSummary`.
