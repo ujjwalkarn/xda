@@ -26,11 +26,13 @@ charSummary <- function(df){
     n        <- data.frame(n)
     colnames(n) <- "n"
     
+    n1       <- nrow(df)
+
     #missing value computation
     miss     <- sapply(EE, function(x) sum(is.na(x)))
     miss     <- as.data.frame(miss)
     g3       <- cbind(n, miss)
-    perc     <- (miss/n)*100
+    perc     <- (miss/n1)*100
     m3       <- cbind(g3, perc)
     colnames(m3)[ncol(m3)] <- "miss%"
     
