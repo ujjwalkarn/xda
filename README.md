@@ -42,7 +42,7 @@ For examples below, the [popular iris dataset](https://en.wikipedia.org/wiki/Iri
 
 library(xda)
 ```
-##numSummary()
+## numSummary()
 ```s
 ## to view a comprehensive summary for all numeric columns in the iris dataset
 
@@ -58,7 +58,7 @@ numSummary(iris)
 ## 5% = 5th percentile value of that variable (value below which 5 percent of the observations may be found)
 ## the percentile values are helpful in detecting outliers
 ```
-#####Output
+##### Output
 ```s
 > numSummary(iris)
 
@@ -70,7 +70,7 @@ numSummary(iris)
 
 ```
 
-##charSummary()
+## charSummary()
 ```s
 ## to view a comprehensive summary for all character columns in the warpbreaks dataset
 
@@ -84,7 +84,7 @@ charSummary(warpbreaks)
 ## for example, wool has 2 unique levels 'A' and 'B' each with count of 27 
 
 ```
-#####Output
+##### Output
 ```s
 > charSummary(warpbreaks)
 
@@ -94,7 +94,7 @@ charSummary(warpbreaks)
 
 ```
 
-##bivariate()
+## bivariate()
 ```s
 ## to perform bivariate analysis between 'Species' and 'Sepal.Length' in the iris dataset
 
@@ -106,7 +106,7 @@ bivariate(iris,'Species','Sepal.Length')
 ## the number of intervals (4 in this case) can be customized (see documentation)
 
 ```
-#####Output
+##### Output
 ```s
 > bivariate(iris,'Species','Sepal.Length')
 
@@ -118,7 +118,7 @@ bivariate(iris,'Species','Sepal.Length')
 
 ```
 
-##Plot()
+## Plot()
 ```s
 ## to plot all other variables against the 'Petal.Length' variable in the iris dataset
 
@@ -126,7 +126,7 @@ Plot(iris,'Petal.Length')
 
 ## some interesting patterns can be seen in the plots below and these insights can be used for predictive modeling
 ```
-#####Output
+##### Output
 ```s
 > Plot(iris,'Petal.Length')
 ```
