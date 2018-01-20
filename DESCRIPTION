@@ -3,6 +3,9 @@ Version: 0.2
 Title: Functions to perform exploratory analysis with any dataframe
 Description: This package contains several functions to perform initial exploratory analysis with any dataframe
 Depends: R (>= 3.1.3)
+Imports:
+    stats,
+    graphics
 Author: Ujjwal Karn (ujwlkarn@gmail.com) with contributions from Shanti Jha
 Maintainer: Ujjwal Karn <ujwlkarn@gmail.com>
 BugReports: https://github.com/ujwlkarn/xda/issues
